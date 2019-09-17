@@ -16,13 +16,19 @@
 	.saw{
 		color:purple;
 	}
-	.active{
+	#active{
 		text-decoration:underline;
 	}
 </style>   <!-- 1.a태그의 모든 문자를 스카이블루색으로 한다.   2.a태그의 꾸며진 모든 문자를 없앤다. -->
            <!-- 1.font-size h1태그의 글자 크기를 50으로 하고 글자는 중앙으로 놓는다. left면 맨 왼쪽, right면 맨 오른쪽 -->  
+	
+	
+	   <!-- <style>에 대한 것 -->
 	   <!-- a태그 전원이 아닌 특정 단어만 묶어서 보라색으로 변경하고 싶을 때 밑에 class로 saw라고 지정 후 style에 .saw로 함 -->
-	   <!-- 추가적으로 밑의 CSS에만 active란 class를 띄어쓰기를 통해 추가로 지정해 줌으로써 밑줄치라는 명령어 넣어줌 -->
+	   <!-- id선택자를 선언해서 CSS에 밑줄 긑게 함. id는 앞에 #을 붙임. -->
+	   <!-- 태그 선택자(style에 그냥 a태그 전체꾸민다고 선언한 것) < class선택자 < id선택자 순으로 적용됨 -->
+	   <!-- 동일한 선택자라도 마지막에 등장하는 선택자가 우선순위가 높음 -->
+	   
 </head>
 
 <body>
@@ -31,10 +37,10 @@
 </h1>
 <a href="study.html"> Html 공부한거  </a>
 <li><a href="html.html"class="saw">1.댓글 어떻게 다는지 알려주는 동영상 </a></li> 
-<li><a href="CSS.html"class="saw active">2.동영상 어떻게 다는지 알려주는 동영상 </a></li>
+<li><a href="CSS.html"class="saw" id="active">2.동영상 어떻게 다는지 알려주는 동영상 </a></li>
 <li><a href="JavaScript.html">3.JavaScript</a></li>
 <!-- 위에 style에 html과 CSS 단어를 보라색으로 지정해주기 위해 class="saw"로 묶어줌 -->
-<!-- class는 띄어쓰기를 통해서 추가로 class생성이 가능함 ex)active -->
+<!-- id라는 선태자로 active를 선언함-->
 <strong><font color="red">빨간 진한 글자</font></strong> <br>  <!-- 폰트 사용해서 할때 -->
 <strong style="color:blue">파란 진한 글자</strong> <br>        <!-- 태그 자체안에 CSS 속성을 넣어서 할때-->
 <u>밑줄</u>                                            
