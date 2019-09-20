@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* block level element 화면 전체를 쓰는 태그 -> 끝까지 박스가 차있음*/
+			h1{
+				border-width:5px;
+				border-color:blue;
+				border-style:solid;
+			}
+			/* 여기서 display:inline;해주면 자신의 부피만큼 쓰는걸로 바뀜 */
+			h2{
+				border-width:5px;
+				border-color:blue;
+				border-style:solid;
+				display:inline;
+			}
+			/* inline element 자기 자신의 컨텐츠만큼의 부피를 쓰는 태그 -> 해당하는 곳에만 박스가 차있음.*/
+			a{
+				border-width:5px;
+				border-color:skyblue;
+				border-style:solid;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			하이
+		</h1>
+		<h2>
+			하이
+		</h2>
+		<br>
+		이곳에 들어가면 네이버가 나옵니다.
+		<a href="https://www.naver.com "target="_blank">(들어가기)</a>
+		
+	</body>
+</html>
