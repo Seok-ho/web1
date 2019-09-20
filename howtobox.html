@@ -5,36 +5,46 @@
 		<title></title>
 		<style>
 			/* block level element 화면 전체를 쓰는 태그 -> 끝까지 박스가 차있음*/
-			h1{
+			h1{  /*태그 옆에 ,로 중복사용 가능.*/
 				border-width:5px;
 				border-color:blue;
 				border-style:solid;
 			}
 			/* 여기서 display:inline;해주면 자신의 부피만큼 쓰는걸로 바뀜 */
-			h2{
-				border-width:5px;
-				border-color:blue;
-				border-style:solid;
-				display:inline;
-			}
+			
 			/* inline element 자기 자신의 컨텐츠만큼의 부피를 쓰는 태그 -> 해당하는 곳에만 박스가 차있음.*/
 			a{
 				border-width:5px;
 				border-color:skyblue;
 				border-style:solid;
+			/*  display:block;이라고 적으면 h1처럼 꽉참  .*/
 			}
+			/*
+			1.display:inline;하면 자기 부피만큼 줄어듬.
+			2.display:block; 하면 화면에 꽉참.
+			3.display:none; 하면 화면에서 사라짐.
+			*/
+			
+			/* 위에 것 줄인거 */
+			h2{
+				border:5px gold solid;
+			}
+			
 		</style>
 	</head>
 	<body>
+		<a href="studyCSS.html"target="_blank">CSS 공부한거(link)</a>
 		<h1>
-			하이
+			하이1
 		</h1>
 		<h2>
-			하이
+			하이2
 		</h2>
+		<h3>
+			하이3
+		</h3>
 		<br>
 		이곳에 들어가면 네이버가 나옵니다.
 		<a href="https://www.naver.com "target="_blank">(들어가기)</a>
-		
 	</body>
 </html>
